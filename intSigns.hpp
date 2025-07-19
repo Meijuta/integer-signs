@@ -8,7 +8,7 @@ bool isNegative(int num)
 
 signed int sign(int num) 
 {
-    return -2*isNegative(num) + 1;
+    return -2*(num>>31) + 1;
 }
 
 #endif
